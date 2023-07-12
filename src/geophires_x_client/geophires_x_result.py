@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 from types import MappingProxyType
 
-from common import log
+from geophires_x_client.common import log
 
 
 class GeophiresXResult:
@@ -98,7 +98,7 @@ class GeophiresXResult:
         }
     )
 
-    _METADATA_FIELDS = tuple(
+    _METADATA_FIELDS = (
         #'End-Use Option',
         'Economic Model',
         'Reservoir Model',
