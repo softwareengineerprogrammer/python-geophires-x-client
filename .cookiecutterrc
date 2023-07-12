@@ -19,7 +19,7 @@ default_context:
     c_extension_function: "longest"
     c_extension_module: "_geophires_x_client"
     c_extension_optional: "no"
-    c_extension_support: "yes"
+    c_extension_support: "no"
     codacy: "no"
     codacy_projectid: "[Get ID from https://app.codacy.com/gh/softwareengineerprogrammer/python-geophires-x-client/settings]"
     codeclimate: "no"

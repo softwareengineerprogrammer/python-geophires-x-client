@@ -1,15 +1,14 @@
-import importlib
 import json
 import os
 import sys
 from pathlib import Path
 
+import GEOPHIRESv3 as geophires
+
 from geophires_x_client.common import log
 from geophires_x_client.geophires_input_parameters import EndUseOption
 from geophires_x_client.geophires_input_parameters import GeophiresInputParameters
 from geophires_x_client.geophires_x_result import GeophiresXResult
-
-geophires = importlib.import_module('GEOPHIRES-X')
 
 
 class GeophiresXClient:
