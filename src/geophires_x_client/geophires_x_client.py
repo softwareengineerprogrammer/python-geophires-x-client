@@ -3,7 +3,7 @@ import os
 import sys
 from pathlib import Path
 
-import geophires_x as geophires
+from geophires_x import GEOPHIRESv3
 
 from geophires_x_client.common import log
 from geophires_x_client.geophires_input_parameters import EndUseOption
@@ -25,7 +25,7 @@ class GeophiresXClient:
         stash_sys_argv = sys.argv
 
         sys.argv = ['', input_params.as_file_path(), input_params.get_output_file_path()]
-        geophires.GEOPHIRESv3.main()
+        GEOPHIRESv3.main()
 
         # Undo the ~unconventional~ things Geophires does.
         sys.argv = stash_sys_argv
