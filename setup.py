@@ -63,6 +63,7 @@ setup(
     python_requires='>=3.7',
     install_requires=[
         # eg: "aspectlib==1.1.1", "six>=1.7",
+        'geophires-x @ https://github.com/softwareengineerprogrammer/python-geophires-x/archive/main.zip'
     ],
     extras_require={
         # eg:

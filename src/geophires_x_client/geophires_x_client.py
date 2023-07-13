@@ -3,7 +3,7 @@ import os
 import sys
 from pathlib import Path
 
-import GEOPHIRESv3 as geophires
+import geophires_x as geophires
 
 from geophires_x_client.common import log
 from geophires_x_client.geophires_input_parameters import EndUseOption
