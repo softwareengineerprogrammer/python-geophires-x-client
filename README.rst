@@ -71,7 +71,8 @@ Documentation
 =============
 
 
-https://python-geophires-x-client.readthedocs.io/
+* https://github.com/softwareengineerprogrammer/python-geophires-x-client/
+* https://github.com/softwareengineerprogrammer/python-geophires-x/
 
 
 Development
