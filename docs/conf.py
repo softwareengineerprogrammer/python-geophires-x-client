@@ -17,7 +17,7 @@ project = 'geophires-x-client'
 year = '2023'
 author = 'softwareengineerprogrammer'
 copyright = f'{year}, {author}'
-version = release = '0.0.3'
+version = release = '0.0.4'
 
 pygments_style = 'trac'
 templates_path = ['.']
