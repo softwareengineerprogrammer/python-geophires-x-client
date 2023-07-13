@@ -13,7 +13,7 @@ def read(*names, **kwargs):
 
 setup(
     name='geophires-x-client',
-    version='0.0.0',
+    version='0.0.1',
     license='MIT',
     description='Wrapper client for GEOPHIRES-X',
     long_description='{}\n{}'.format(
