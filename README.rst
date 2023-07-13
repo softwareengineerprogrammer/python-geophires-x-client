@@ -43,9 +43,9 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.org/project/geophires-x-client
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/softwareengineerprogrammer/python-geophires-x-client/v0.0.2.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/softwareengineerprogrammer/python-geophires-x-client/v0.0.3.svg
     :alt: Commits since latest release
-    :target: https://github.com/softwareengineerprogrammer/python-geophires-x-client/compare/v0.0.2...main
+    :target: https://github.com/softwareengineerprogrammer/python-geophires-x-client/compare/v0.0.3...main
 
 
 
