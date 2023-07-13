@@ -124,7 +124,7 @@ class GeophiresXResult:
             for field in fields:
                 self.result[category][field] = self._get_result_field(field)
 
-        self.result['metadata'] = {'output_file_path': self.output_file_path}
+        self.result['metadata'] = {'output_file_path': str(self.output_file_path)}
         for metadata_field in GeophiresXResult._METADATA_FIELDS:
             self.result['metadata'][metadata_field] = self._get_metadata_field(metadata_field)
 
