@@ -11,6 +11,8 @@ class GeophiresXResult:
             'SUMMARY OF RESULTS': [
                 # TODO uses colon delimiter inconsistently
                 #'End-Use Option',
+                'Average Net Electricity Production',
+                'Electricity breakeven price',
                 'Average Direct-Use Heat Production',
                 'Direct-Use heat breakeven price',
                 'Number of production wells',
@@ -35,6 +37,7 @@ class GeophiresXResult:
                 'Injection well casing ID',
                 'Produciton well casing ID',  # TODO correct typo upstream
                 'Number of times redrilling',
+                'Power plant type',
             ],
             'RESOURCE CHARACTERISTICS': ['Maximum reservoir temperature', 'Number of segments', 'Geothermal gradient'],
             'RESERVOIR PARAMETERS': [
@@ -107,7 +110,7 @@ class GeophiresXResult:
     def __init__(self, output_file_path):
         self.output_file_path = output_file_path
 
-        f = Path.open(self.output_file_path)
+        f = Path.open(Path(self.output_file_path), 'r')
         self._lines = list(f.readlines())
         f.close()
 
@@ -149,7 +152,7 @@ class GeophiresXResult:
         str_val = val_and_unit_tuple[0]
 
         unit = None
-        if len(val_and_unit_str) == 2:
+        if len(val_and_unit_tuple) == 2:
             unit = val_and_unit_tuple[1]
         elif field.startswith('Number'):
             unit = 'count'
