@@ -12,7 +12,7 @@ class GeophiresXClientTestCase(unittest.TestCase):
     def test_main(self):
         assert main([]) == 0
 
-    def test_geophires_x(self):
+    def test_geophires_x_direct_use_heat(self):
         client = GeophiresXClient()
         result = client.get_geophires_result(
             GeophiresInputParameters(
@@ -47,6 +47,24 @@ class GeophiresXClientTestCase(unittest.TestCase):
         assert result == result_same_input
 
         # TODO assert that result was retrieved from cache instead of recomputed (somehow)
+
+    def test_geophires_x_electricity(self):
+        client = GeophiresXClient()
+        result = client.get_geophires_result(
+            GeophiresInputParameters(
+                {
+                    'End-Use Option': EndUseOption.ELECTRICITY.value,
+                    'Reservoir Model': 1,
+                    'Time steps per year': 1,
+                    'Reservoir Depth': 3,
+                    'Gradient 1': 50,
+                    'Maximum Temperature': 300,
+                    'Print Output to Console': 0,
+                }
+            )
+        )
+
+        assert result is not None
 
     def test_geophires_x_result(self):
         result = GeophiresXResult(os.path.abspath('geophires-result_example-1.out'))

@@ -37,7 +37,7 @@ class GeophiresXResult:
                 'Injection well casing ID',
                 'Produciton well casing ID',  # TODO correct typo upstream
                 'Number of times redrilling',
-                'Power plant type',
+                # 'Power plant type', # Not a number - TODO parse non-number values without throwing exception
             ],
             'RESOURCE CHARACTERISTICS': ['Maximum reservoir temperature', 'Number of segments', 'Geothermal gradient'],
             'RESERVOIR PARAMETERS': [
