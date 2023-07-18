@@ -37,7 +37,7 @@ class GeophiresInputParameters:
         f.close()
         return tmp_file_path
 
-    def get_output_file_path(self) -> str:
+    def get_output_file_path(self):
         return Path(tempfile.gettempdir(), f'geophires-result_{self._id}.out')
 
     def __hash__(self):
